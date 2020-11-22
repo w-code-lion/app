@@ -9,10 +9,12 @@ $bg-btn:#BBA490;
 $color-btn:#fff;
 $color-menu:#fff;
 $color-slider:#fff;
+$content-paragraph:#333333;
+$content-more:#333333;
 
 
 .container {
-	// outline:1px solid red;
+	outline:1px solid red;
 	padding: 0 15px;
 	overflow: hidden;
 }
@@ -20,7 +22,7 @@ $color-slider:#fff;
 .row {
     
 	.col, > [class^=col-] {
-	    // outline: 1px solid blue;
+	    outline: 1px solid blue;
 	}
 }
 
@@ -208,22 +210,142 @@ $color-slider:#fff;
     outline: none;
 }
 
+.wrapper__content {
+	padding-top: 115px;
+}
 
+.performance {
+	margin-bottom: 85px;
+}
 
+.performance__top {
+	overflow: hidden;
+}
 
+.block__text {
+	overflow: hidden;
+	// padding-right: 80px;
+}
 
+.paragraph__content {
+	font-size: 40px;
+	color: $content-paragraph;
+	font-weight: 400;
+	line-height: 1.3;
+}
 
+.performance__text {
+	max-width: 460px;
+	font-weight: 400;
+	font-size:18px;
+	color: #666666;
+	line-height: 1.5;
+	margin-top:20px;
+}
 
+.more {
+	margin-top: 25px;
+	& a {
+		font-size: 18px;
+		font-weight: 400;
+		color: $content-more;
+		position: relative;
+		padding-right: 23px;
+		background-image: url(../img/arrow-more.svg);
+		background-repeat: no-repeat;
+		background-position: right 9px;
+		transition: .5s;
+		&:hover {
+			text-decoration: none;
+			padding-right: 30px;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			height: 1px;
+			width: 90px;
+			background-color: $content-more;
+			bottom: -3px;
+			left: 0;
+		}
+	}
+}
 
+.about__company-foto {
+	object-fit: cover;
+	height: 100%;
+}
 
+.performance__bottom {
+	padding: 30px 0;
+	margin-top: 10px;
+}
 
+.box__numbers {
+	padding: 53px 0 55px 0;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0,0,0,.06);
+}
 
+.numbers__item {
+	color: $color-text;
+	font-size:50px;
+	font-weight: 400;
+	margin-bottom: 3px;
+}
 
+.numbers__text {
+	text-align: center;
+	color: $content-color;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4;
+}
 
+.our__specialists {
+	background: #FAFAFA;
+}
 
+.our__specialist-block {
+	overflow: hidden;
+	padding: 75px 0 85px 0; 
+	position: relative;
+}
 
+.text__content {
+	font-size:18px;
+	color: $content-color;
+	margin: 17px 0 50px 0;
+}
 
+.specialist-box {
+	background: #ffffff;
+	border-radius: 10px;
+	padding-bottom: 20px;
+	text-align: center;
+}
 
+.specialist__carousel-foto {
+	height: 100%;
+	width: 100%;
+}
+
+.specialist__carousel-paragraph {
+	color: #101D30;
+	font-size:18px;
+	margin:25px 0 5px 0;
+}
+
+.specialist__carousel-text {
+	font-size:15px;
+	color: #999999;
+}
+
+.our__services {
+	overflow: hidden;
+	padding: 75px 0 85px 0;
+}
 
 
 
