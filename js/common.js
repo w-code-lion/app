@@ -54,12 +54,12 @@ $(function() {
 $(document).ready(function(){
       $('.specialist__carousel').slick({
          dots: false,
-         infinite: false,
+         infinite: true,
          arrows:true,
          autoplay:true,
          slidesToShow: 3,
          speed:800,
-         autoplaySpeed: 5000
+         autoplaySpeed: 3000
       });
 
     });
