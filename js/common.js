@@ -3,7 +3,7 @@ $(function() {
    $(document).ready(function(){
       $('.hdr__slider').slick({
          dots: true,
-         infinite: false,
+         infinite: true,
          arrows:true,
          autoplay:true,
          speed:800,
@@ -14,7 +14,7 @@ $(function() {
 
        $('.company__carousel').slick({
          dots: true,
-         infinite: false,
+         infinite: true,
          arrows:false,
          autoplay:true,
          speed:600,
@@ -62,8 +62,24 @@ $(document).ready(function(){
          autoplaySpeed: 3000
       });
 
+      $('.articles__carousel').slick({
+         dots: false,
+         infinite: true,
+         arrows:true,
+         autoplay:true,
+         slidesToShow: 4,
+         speed:800,
+         autoplaySpeed: 4000
+      });
+
     });
 
 
 });
  
+
+  $(function() {
+        $('.beefup').beefup({
+          openSingle: true,
+        });
+    });
